@@ -10,7 +10,8 @@ namespace ConsoleApplication
             double width, height, woodLength, glassArea;
             string widthString, heightString;
             String cDate = DateTime.Now.ToString("MM.dd.yyyy");
-            DateTime daysLeft = DateTime.Parse("12/25/2019 12:00:01 AM");
+            DateTime daysLeft = new DateTime(DateTime.Now.Year, 12, 25);
+            daysLeft.ToString("MM.dd.yyyy");
             DateTime startDate = DateTime.Now;
             TimeSpan t = daysLeft - startDate;
             string countDown = string.Format("{0} Days, {1} Hours, {2} Minutes, {3} Seconds til Christmas!", t.Days, t.Hours, t.Minutes, t.Seconds);
