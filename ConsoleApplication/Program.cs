@@ -19,20 +19,20 @@ namespace ConsoleApplication
             //Say Hello
             Console.WriteLine("Hello!");
             //Prompt For Name
-            Console.WriteLine("Enter Full Name");
+            Console.Write("Enter Full Name: ");
             //Store Input
             String FullName = Console.ReadLine();
             //Prompt For Location
-            Console.WriteLine("Your Lcation (in terms of state or country): ");
+            Console.Write("Your Lcation (in terms of state or country): ");
             //Store Input
             String Location = Console.ReadLine();
             //Prompt For Width
-            Console.WriteLine("Enter Width Of Window (in inches): ");
+            Console.Write("Enter Width Of Window (in inches): ");
             //Store Input
             widthString = Console.ReadLine();
             width = double.Parse(widthString);
             //Prompt For Height
-            Console.WriteLine("Enter Height Of Window (in inches): ");
+            Console.Write("Enter Height Of Window (in inches): ");
             //Store Input
             heightString = Console.ReadLine();
             height = double.Parse(heightString);
@@ -51,6 +51,7 @@ namespace ConsoleApplication
             Console.WriteLine("The area of the glass is " +
             glassArea + " square metres") ;
 
+            // Pause application from closing
             Console.ReadKey();
         }
     }
